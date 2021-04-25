@@ -27,7 +27,7 @@
                                     <th scope="col">NO.</th>
                                     <th scope="col">JUDUL POST</th>
                                     <th scope="col">CONTENT</th>
-                                    <th scope="col">AKSI</th>
+                                    <th scope="col-2">AKSI</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -38,8 +38,8 @@
                                         <td><%= data[i].title%></td>
                                         <td><%= data[i].content%></td>
                                         <td class="textcenter">
-                                            <a href="/posts/edit/<%=data[i].id%>" class="btn btn-sm btnprimary">EDIT</a>
-                                            <a onclick="return alert('Are You sure?')" href="/posts/delete/<%=data[i].id%>" class="btn btn-sm btndanger">HAPUS</a>
+                                            <a href="/posts/edit/<%=data[i].id_post%>" class="btn btn-sm btn-primary">EDIT</a>
+                                            <a onclick="return alert('Are You sure?')" href="/posts/delete/<%=data[i].id_post%>" class="btn btn-sm btn-danger">HAPUS</a>
                                         </td>
                                     </tr>
                                 <% }
